@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background-image: url(bg1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background: transparent;
+  backdrop-filter: blur(18px);
+  padding: 2rem;
+  border-radius: 20px;
+  height: 60vh;
+  width: 45vh;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+h1 {
+  color: rgb(3, 36, 77);
+}
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form,
+select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+}
+
+form input {
+  border: 1px;
+  padding-left: 1rem;
+  height: 2rem;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#box {
+  background-color: transparent;
+  color: rgb(3, 31, 71);
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 0 1rem;
+  border-radius: 0.5rem;
+  border: 1px;
+}
+
+i {
+  margin-top: 2rem;
+}
+
+.select-container select {
+  font-size: 1rem;
+}
+
+.msg {
+  margin: 3rem 0 2rem 0;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
+/* form button{
+    margin-top: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    color: rgb(13, 152, 209);
+    background-color: rgb(6, 64, 114);
+} */
+
+button {
+  --color: rgb(13, 152, 209);
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: var(--color);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
